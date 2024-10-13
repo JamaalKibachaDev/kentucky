@@ -1,0 +1,10 @@
+span{
+    font-weight: 600;
+}
+
+.faq-h2{
+    text-align: center;
+    padding: 20px;
+    font-style: oblique;
+    text-decoration: overline;
+}

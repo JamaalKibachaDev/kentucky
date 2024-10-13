@@ -5,6 +5,11 @@ import "./css/MainCarousel.css";
 const MainCarousel = () => {
     return(
         <>
+
+        <div className="py-5">
+            <br />
+        </div>
+
          <Carousel>
       <Carousel.Item interval={2000}>
        <img src={require("./images/carousel-1.jpeg")} alt="carousel-1" className="carousel-img"/>

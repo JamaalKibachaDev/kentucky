@@ -8,7 +8,10 @@ import "./css/NavBar.css"
 
 const NavBar = () => {
     return(
-<Navbar expand="lg" className="bg-body-tertiary">
+      <>
+      <nav className='navbar navbar-fixed-top'>
+
+<Navbar expand="lg" className="bg-body-tertiary navbar fixed-top">
       <Container>
         <Navbar.Brand href="#home">
             <img src= {require("./images/kfc-logo1.png")} alt="kfc-logo" className="kfc-logo"/>
@@ -37,6 +40,10 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </nav>
+
+    
+    </>
     );
 }
 

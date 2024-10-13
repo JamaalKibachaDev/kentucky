@@ -27,8 +27,9 @@ const MainFooter = () => {
                     <div className="social-icons">
                       <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a> 
                       <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>  
-                      <a href=""><i class="fa-brands fa-x-twitter fa-xl"></i></a>   
+                      <a href=""><i class="fa-brands fa-x-twitter fa-xl"></i></a>  
                       </div>
+                      <span className="hotline">KFC Hotline : +254 755 932 932</span> 
                 </div>
             </div>
             <div className="text-center my-4">
