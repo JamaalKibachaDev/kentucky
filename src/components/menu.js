@@ -10,6 +10,8 @@ import Form from 'react-bootstrap/Form';
 
 import "./css/MenuCards.css";
 
+
+
 const MenuMain = () => {
 
     
@@ -21,108 +23,103 @@ const MenuMain = () => {
     return(
         <>
 
-        
-<div className="py-5">
-            <br />
-        </div>
-
+<div className = "py-5"> <br /></div>
 <h2 className='menu-header'>Our Menu</h2>
 
-        <div className="menu-main bg bg-light bg-gradient">
+<div className="menu-main bg bg-light bg-gradient">
 
 {/*Box Meals*/}
 <h3 className='menu-description bg bg-danger bg-gradient'>Box Meals  <i class="fa-solid fa-box-open fa-sm"></i></h3>
 <div className='my-3 d-flex justify-content-evenly'>
 <Card className='card-main'>
-      <Card.Img variant="top" className='card-img' src= {require("./images/chicken-lunchbox.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >Chicken Lunchbox</Card.Title>
-        <Card.Text>
-            Ksh850.00
-        </Card.Text>
+<Card.Img variant="top" className='card-img' src= {require("./images/chicken-lunchbox.jpeg")} />
+<Card.Body>
+<Card.Title className='fw-bolder' >Chicken Lunchbox</Card.Title>
+<Card.Text>
+    Ksh850.00
+</Card.Text>
 <br/>
-        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
-      </Card.Body>
-    </Card>
+<Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
+</Card.Body>
+</Card>
 
-    <Card className='card-main'>
-      <Card.Img variant="top" src={require("./images/wings-lunchbox.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >Wings Lunchbox</Card.Title>
-        <Card.Text>
-        Ksh850.00
-        </Card.Text>
-        <br />
-        <Button variant="outline-danger"  onClick={handleShow} className='card-button'>Order Now</Button>
-      </Card.Body>
-    </Card>
+<Card className='card-main'>
+<Card.Img variant="top" src={require("./images/wings-lunchbox.jpeg")} />
+<Card.Body>
+<Card.Title className='fw-bolder' >Wings Lunchbox</Card.Title>
+<Card.Text>
+Ksh850.00
+</Card.Text>
+<br />
+<Button variant="outline-danger"  onClick={handleShow} className='card-button'>Order Now</Button>
+</Card.Body>
+</Card>
 
-    <Card className='card-main'>
-      <Card.Img variant="top" src={require("./images/crunch-burger-lunchbox.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >Crunch Burger Lunchbox</Card.Title>
-        <Card.Text>
-        Ksh850.00
-        </Card.Text>
-        <Button variant="outline-danger"  onClick={handleShow} className="card-button">Order Now</Button>
-      </Card.Body>
-    </Card>
-    </div>
+<Card className='card-main'>
+<Card.Img variant="top" src={require("./images/crunch-burger-lunchbox.jpeg")} />
+<Card.Body>
+<Card.Title className='fw-bolder' >Crunch Burger Lunchbox</Card.Title>
+<Card.Text>
+Ksh850.00
+</Card.Text>
+<Button variant="outline-danger"  onClick={handleShow} className="card-button">Order Now</Button>
+</Card.Body>
+</Card>
+</div>
 
 
 {/*Chicken Pieces*/}
-    <h3 className='menu-description bg bg-danger bg-gradient'>Chicken Pieces  <img src={require("./images/sanders-logo.png")} alt="sanders-logo" className="sanders-logo" /></h3>
-    <div className='my-3 d-flex justify-content-evenly'>
+<h3 className='menu-description bg bg-danger bg-gradient'>Chicken Pieces  <img src={require("./images/sanders-logo.png")} alt="sanders-logo" className="sanders-logo" /></h3>
+<div className='my-3 d-flex justify-content-evenly'>
 <Card className='card-main'>
-      <Card.Img variant="top" className='card-img' src= {require("./images/kfc-bucket.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >21PC Bucket</Card.Title>
-        <Card.Text>
-            Ksh3800.00
-        </Card.Text>
+<Card.Img variant="top" className='card-img' src= {require("./images/kfc-bucket.jpeg")} />
+<Card.Body>
+<Card.Title className='fw-bolder' >21PC Bucket</Card.Title>
+<Card.Text>
+    Ksh3800.00
+</Card.Text>
 
-        <Button variant="outline-danger" className='card-button' onClick={handleShow}>Order Now</Button>
-      </Card.Body>
-    </Card>
+<Button variant="outline-danger" className='card-button' onClick={handleShow}>Order Now</Button>
+</Card.Body>
+</Card>
 
-    <Card className='card-main'>
-      <Card.Img variant="top" src={require("./images/kfc-bucket.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >18PC Bucket</Card.Title>
-        <Card.Text>
-        Ksh3250.00
-        </Card.Text>
-        <Button variant="outline-danger"  onClick={handleShow}  className="card-button">Order Now</Button>
-      </Card.Body>
-    </Card>
+<Card className='card-main'>
+<Card.Img variant="top" src={require("./images/kfc-bucket.jpeg")} />
+<Card.Body>
+<Card.Title className='fw-bolder' >18PC Bucket</Card.Title>
+<Card.Text>
+Ksh3250.00
+</Card.Text>
+<Button variant="outline-danger"  onClick={handleShow}  className="card-button">Order Now</Button>
+</Card.Body>
+</Card>
 
-    <Card className='card-main'>
-      <Card.Img variant="top" src={require("./images/kfc-bucket.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >15PC Bucket</Card.Title>
-        <Card.Text>
-        Ksh2900.00
-        </Card.Text>
-        <Button variant="outline-danger"  onClick={handleShow} className="card-button">Order Now</Button>
-      </Card.Body>
-    </Card>
-    </div>
+<Card className='card-main'>
+<Card.Img variant="top" src={require("./images/kfc-bucket.jpeg")} />
+<Card.Body>
+<Card.Title className='fw-bolder' >15PC Bucket</Card.Title>
+<Card.Text>
+Ksh2900.00
+</Card.Text>
+<Button variant="outline-danger"  onClick={handleShow} className="card-button">Order Now</Button>
+</Card.Body>
+</Card>
+</div>
 <div className='d-flex justify-content-center'>
-    <Card className='card-main'>
-      <Card.Img variant="top" src={require("./images/9-pc-bucket.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >9PC Bucket</Card.Title>
-        <Card.Text>
-        Ksh1900.00
-        </Card.Text>
-        <Button variant="outline-danger"  onClick={handleShow} className="card-button">Order Now</Button>
-      </Card.Body>
-    </Card>
-    </div>
+<Card className='card-main'>
+<Card.Img variant="top" src={require("./images/9-pc-bucket.jpeg")} />
+<Card.Body>
+<Card.Title className='fw-bolder' >9PC Bucket</Card.Title>
+<Card.Text>
+Ksh1900.00
+</Card.Text>
+<Button variant="outline-danger"  onClick={handleShow} className="card-button">Order Now</Button>
+</Card.Body>
+</Card>
+</div>
 
-
-    {/*Sharing*/}
-    <h3 className='menu-description bg bg-danger bg-gradient'>Sharing <i class="fa-solid fa-utensils fa-sm"></i></h3>
+         {/*Sharing*/}
+ <h3 className='menu-description bg bg-danger bg-gradient'>Sharing <i class="fa-solid fa-utensils fa-sm"></i></h3>
     <div className='my-3 d-flex justify-content-evenly'>
 <Card className='card-main'>
       <Card.Img variant="top" className='card-img' src= {require("./images/sticky-bawa-bucket.jpeg")} />
@@ -309,6 +306,60 @@ const MenuMain = () => {
         <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
       </Card.Body>
     </Card>
+    </div>
+
+
+{/*Wings*/}
+    <h3 className='menu-description bg bg-danger bg-gradient'>Wings</h3>
+    <div className='my-3 d-flex justify-content-evenly'>
+<Card className='card-main'>
+      <Card.Img variant="top" className='card-img' src= {require("./images/wingman.jpeg")} />
+      <Card.Body>
+        <Card.Title className='fw-bolder' >Wingman</Card.Title>
+        <Card.Text>
+            Ksh700.00
+        </Card.Text>
+
+        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='card-main'>
+      <Card.Img variant="top" className='card-img' src= {require("./images/wingman-sticky.jpeg")} />
+      <Card.Body>
+        <Card.Title className='fw-bolder' >Wingman Sticky</Card.Title>
+        <Card.Text>
+            Ksh790.00
+        </Card.Text>
+
+        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='card-main'>
+      <Card.Img variant="top" className='card-img' src= {require("./images/sticky-wings.jpeg")} />
+      <Card.Body>
+        <Card.Title className='fw-bolder' >4 Sticky Wings</Card.Title>
+        <Card.Text>
+            Ksh550.00
+        </Card.Text>
+
+        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='card-main'>
+      <Card.Img variant="top" className='card-img' src= {require("./images/zinger-wings-hot.jpeg")} />
+      <Card.Body>
+        <Card.Title className='fw-bolder' >4 Hot Zinger Wings</Card.Title>
+        <Card.Text>
+            Ksh490.00
+        </Card.Text>
+
+        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
+      </Card.Body>
+    </Card>
+
     </div>
 
 
