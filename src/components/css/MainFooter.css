@@ -1,0 +1,41 @@
+
+
+.footer{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+ul, li{
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+li a{
+    text-decoration-line: none;
+    color: black;
+}
+
+
+.footer-right{
+    text-align: center;
+}
+
+.social-header{
+font-size: larger;
+color:rgb(225, 55, 55);
+}
+
+.social-icons{
+    padding: 10px;
+}
+
+.fa-brands{
+    color:rgb(225, 55, 55);
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.15);
+}
+
