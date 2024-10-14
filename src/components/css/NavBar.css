@@ -2,3 +2,8 @@
     width: auto;
     height: 120px;
 }
+
+.modal{
+    font-weight: 600;
+    font-style: oblique;
+}

@@ -3,10 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
 
 import "./css/NavBar.css"
 
 const NavBar = () => {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     return(
       <>
       <nav className='navbar navbar-fixed-top'>
@@ -22,7 +31,7 @@ const NavBar = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Our Menu</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Our Offers</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1" onClick={handleShow}>Our Offers</NavDropdown.Item>
 
               <NavDropdown.Divider />
 
@@ -40,9 +49,22 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </nav>
 
-    
+    {/*Modal*/}
+    <Modal  size="lg" centered
+    show={show} onHide={handleClose} className="modal">
+        <Modal.Header closeButton>
+          <Modal.Title>Oops!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>We currently don't have any offers running at the moment but make sure to keep an eye on upcoming deals and discounts on selected items in our website or your nearest KFC restaurant.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="danger" onClick={handleClose}>
+            Close
+          </Button>
+
+        </Modal.Footer>
+      </Modal>
+    </nav>
     </>
     );
 }

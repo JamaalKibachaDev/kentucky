@@ -1,20 +1,18 @@
 import React from 'react';
 import './App.css';
 
-import Faq from './components/faq';
-import MenuMain from './components/menu';
-import MenuCards from './components/HomeMenu';
-
+import { BrowserRouter, Router, Routes, Route, NavLink } from 'react-router-dom';
 /*Pages*/
 import HomePage from './pages/home';
 import FaqPage from './pages/faqpage';
 import MenuPage from './pages/MenuPage';
+import AboutUsPage from './pages/aboutUspage';
 
 function App() {
   return (
     <div className="App">
      <div>
-      <MenuPage/>
+      < HomePage/>
      </div>
     </div>
   );

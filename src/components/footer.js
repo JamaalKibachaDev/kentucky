@@ -3,7 +3,7 @@ import "./css/MainFooter.css";
 const MainFooter = () => {
     return(
         <>
-        <div className="footer">
+        <div className="footer bg bg-light bg-gradient mb-0">
             <div className="d-flex justify-content-evenly fs-5">
                 <div className="footer-left">
                     <ul>

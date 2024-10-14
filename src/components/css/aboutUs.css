@@ -1,0 +1,44 @@
+span{
+    font-weight: 700;
+}
+
+.main-h3{
+    color:rgb(230, 78, 78);
+    font-style: oblique;
+    font-weight: 500;
+}
+.aside-header{
+    width: fit-content;
+    padding: 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(189, 181, 181);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heritage-img{
+    transition: 0.4s;
+}
+
+.heritage-img:hover{
+    transform: scale(1.05);
+}
+
+.aside-header:hover{
+    background-color:  rgb(230, 78, 78) ;
+    transform: scale(1.05);
+}
+
+.images-arrange{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.gallery-1{
+    font-weight: 400;
+    font-size: large;
+    font-style: italic;
+}

@@ -20,8 +20,8 @@ const MenuMain = () => {
 
     return(
         <>
-
 <div className = "py-5"> <br /></div>
+
 <h2 className='menu-header'>Our Menu</h2>
 
 <div className="menu-main bg bg-light bg-gradient">
