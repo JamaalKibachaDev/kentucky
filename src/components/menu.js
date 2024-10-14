@@ -10,8 +10,6 @@ import Form from 'react-bootstrap/Form';
 
 import "./css/MenuCards.css";
 
-
-
 const MenuMain = () => {
 
     
@@ -494,61 +492,6 @@ Ksh1900.00
     </Card>
     </div>
 
-
-{/*Wings*/}
-    <h3 className='menu-description bg bg-danger bg-gradient'>Wings</h3>
-    <div className='my-3 d-flex justify-content-evenly'>
-<Card className='card-main'>
-      <Card.Img variant="top" className='card-img' src= {require("./images/wingman.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >Wingman</Card.Title>
-        <Card.Text>
-            Ksh700.00
-        </Card.Text>
-
-        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
-      </Card.Body>
-    </Card>
-
-    <Card className='card-main'>
-      <Card.Img variant="top" className='card-img' src= {require("./images/wingman-sticky.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >Wingman Sticky</Card.Title>
-        <Card.Text>
-            Ksh790.00
-        </Card.Text>
-
-        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
-      </Card.Body>
-    </Card>
-
-    <Card className='card-main'>
-      <Card.Img variant="top" className='card-img' src= {require("./images/sticky-wings.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >4 Sticky Wings</Card.Title>
-        <Card.Text>
-            Ksh550.00
-        </Card.Text>
-
-        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
-      </Card.Body>
-    </Card>
-
-    <Card className='card-main'>
-      <Card.Img variant="top" className='card-img' src= {require("./images/zinger-wings-hot.jpeg")} />
-      <Card.Body>
-        <Card.Title className='fw-bolder' >4 Hot Zinger Wings</Card.Title>
-        <Card.Text>
-            Ksh490.00
-        </Card.Text>
-
-        <Button variant="outline-danger" className='card-button' onClick={handleShow} >Order Now</Button>
-      </Card.Body>
-    </Card>
-
-    </div>
-
-
 {/*Snacks & Sides*/}
     <h3 className='menu-description bg bg-danger bg-gradient'>Snacks & Sides <i class="fa-solid fa-cookie-bite fa-sm"></i></h3>
     <div className='my-3 d-flex justify-content-evenly'>
@@ -811,23 +754,23 @@ Ksh1900.00
         <Form>
       <Form.Group className="mb-3" controlId="formBasicName">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="email" placeholder="Enter Full Names" />
+        <Form.Control type="text" placeholder="Enter Full Names" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicAddress">
         <Form.Label>Address</Form.Label>
-        <Form.Control type="number" placeholder="Enter your Residential Address" />
+        <Form.Control type="text" placeholder="Enter your Residential Address" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicAddress">
         <Form.Label>Phone Number</Form.Label>
-        <Form.Control type="number" placeholder="Enter your Phone Number" />
+        <Form.Control type="text" placeholder="Enter your Phone Number" />
       </Form.Group>
 
       
       <Form.Group className="mb-3" controlId="formBasicAddress">
         <Form.Label>Quantity</Form.Label>
-        <Form.Control type="number" min={1} />
+        <Form.Control type="number" min={1}  placeholder='MOQ - 1'/>
       </Form.Group>
 
       <Form.Text className="text-light">Please Ensure that the information given is acurrate in order to ensure  smooth delivery of your order.
@@ -835,7 +778,7 @@ Ksh1900.00
 
 
       <Form.Group className="mb-3 d-flex justify-content-center p-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me if complete!" className='fw-bold text-light' />
+        <Form.Check type="checkbox" label="Check me if complete!" className='fw-bold text-light'/>
       </Form.Group>
 
       
