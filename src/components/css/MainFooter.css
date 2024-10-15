@@ -7,25 +7,32 @@
 ul, li{
     list-style-type: none;
     padding: 10px;
+    display: inline-block;
 
 }
 
-li a{
+li {
     text-decoration-line: none;
     color: black;
     transition: 0.4s;
+    font-size: medium;
 }
 
-
+li:hover{
+    color: rgb(230, 78, 78);
+    transform: scale(1.1);
+}
 
 
 .footer-right{
     text-align: center;
+    margin-top: 3%;
 }
 
 .social-header{
 font-size: larger;
 color:rgb(225, 55, 55);
+
 }
 
 .social-icons{
@@ -46,5 +53,6 @@ color:rgb(225, 55, 55);
     font-size: medium;
     font-weight: 500;
 }
+
 
 

@@ -7,6 +7,9 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 
+
+import { Link } from 'react-router-dom';
+
 import "./css/NavBar.css"
 
 const NavBar = () => {
@@ -28,22 +31,24 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto fs-4 fw-bold">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Our Menu</Nav.Link>
-            <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" onClick={handleShow}>Our Offers</NavDropdown.Item>
+
+          <Link to ="/" className="nav-links">Home</Link>
+
+          <Link to ="/menu" className="nav-links">Menu</Link>
+
+            <NavDropdown title="More" id="basic-nav-dropdown" className="nav-more">
+              <NavDropdown.Item onClick={handleShow}><Link to ="#" className="nav-links">Our Offers</Link></NavDropdown.Item>
 
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="#action/3.2">
-                Frequently Asked Questions
+              <NavDropdown.Item >
+                <Link to ="/faq" className="nav-links">Frequently Asked Questions</Link>
               </NavDropdown.Item>
 
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="#action/3.3">About Us</NavDropdown.Item>
+              <NavDropdown.Item ><Link to ="/about" className="nav-links">About Us</Link></NavDropdown.Item>
            
-             
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

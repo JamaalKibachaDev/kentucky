@@ -8,6 +8,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import Form from 'react-bootstrap/Form';
 
+import { Link } from 'react-router-dom';
+
 import "./css/MenuCards.css"
 
 
@@ -25,7 +27,8 @@ let MenuCards = () => {
 
 <div className='bg bg-light bg-gradient'>
 
-<h3 className='menu-description bg bg-danger bg-gradient'>Box Meals</h3>
+{/*Box Meals*/}
+<h3 className='menu-description bg bg-danger bg-gradient'>Box Meals <i class="fa-solid fa-box-open fa-sm"></i></h3>
 <div className='my-3 d-flex justify-content-evenly'>
 <Card className='card-main'>
       <Card.Img variant="top" className='card-img' src= {require("./images/chicken-lunchbox.jpeg")} />
@@ -62,8 +65,8 @@ let MenuCards = () => {
     </Card>
     </div>
 
-
-    <h3 className='menu-description bg bg-danger bg-gradient'>Chicken Pieces</h3>
+{/*Chicken Pieces*/}
+    <h3 className='menu-description bg bg-danger bg-gradient'>Chicken Pieces <img src={require("./images/sanders-logo.png")} alt="sanders-logo" className="sanders-logo" /></h3>
     <div className='my-3 d-flex justify-content-evenly'>
 <Card className='card-main'>
       <Card.Img variant="top" className='card-img' src= {require("./images/kfc-bucket.jpeg")} />
@@ -167,7 +170,7 @@ let MenuCards = () => {
         <Card.Text>
          Proceed to the Our Menu page to view more products.
         </Card.Text>
-        <Button variant="outline-danger" className='card-button'>Our Menu</Button>
+        <Button variant="outline-danger" className='card-button'><Link to="/menu" className="nav-links">Our Menu</Link></Button>
       </Card.Body>
     </Card>
     </div>
