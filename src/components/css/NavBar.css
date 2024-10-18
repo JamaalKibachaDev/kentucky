@@ -3,6 +3,10 @@
     height: 120px;
 }
 
+.navbar{
+    width: 100%;
+}
+
 .modal{
     font-weight: 600;
     font-style: oblique;
@@ -22,3 +26,4 @@
     margin-left: 3%;
 
 }
+
