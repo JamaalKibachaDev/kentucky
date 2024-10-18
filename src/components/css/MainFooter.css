@@ -56,3 +56,31 @@ color:rgb(225, 55, 55);
 
 
 
+
+@media(max-width:700px) {
+    .hotline{
+        font-size: small;
+    }
+
+}
+
+@media(max-width:600px) {
+    .footer-left ul li{
+        font-size: small;
+    }
+
+    .footer-right{
+        padding: 15px;
+    }
+
+    .hotline{
+        font-size: x-small;
+    }
+
+
+    i{
+        font-size: small;
+    }
+    
+}
+

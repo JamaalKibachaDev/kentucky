@@ -33,7 +33,7 @@ let MenuCards = () => {
 <Card className='card-main'>
       <Card.Img variant="top" className='card-img' src= {require("./images/chicken-lunchbox.jpeg")} />
       <Card.Body>
-        <Card.Title >Chicken Lunchbox</Card.Title>
+        <Card.Title className="title fs-6">Chicken Lunchbox</Card.Title>
         <Card.Text>
             Ksh850.00
         </Card.Text>
@@ -45,7 +45,7 @@ let MenuCards = () => {
     <Card className='card-main'>
       <Card.Img variant="top" src={require("./images/wings-lunchbox.jpeg")} />
       <Card.Body>
-        <Card.Title>Wings Lunchbox</Card.Title>
+        <Card.Title className="title fs-6">Wings Lunchbox</Card.Title>
         <Card.Text>
         Ksh850.00
         </Card.Text>
@@ -56,7 +56,7 @@ let MenuCards = () => {
     <Card className='card-main'>
       <Card.Img variant="top" src={require("./images/crunch-burger-lunchbox.jpeg")} />
       <Card.Body>
-        <Card.Title>Crunch Burger Lunchbox</Card.Title>
+        <Card.Title className="title fs-6">Crunch Burger Lunchbox</Card.Title>
         <Card.Text>
         Ksh850.00
         </Card.Text>
@@ -71,7 +71,7 @@ let MenuCards = () => {
 <Card className='card-main'>
       <Card.Img variant="top" className='card-img' src= {require("./images/kfc-bucket.jpeg")} />
       <Card.Body>
-        <Card.Title >21PC Bucket</Card.Title>
+        <Card.Title className="title fs-6">21PC Bucket</Card.Title>
         <Card.Text>
             Ksh3800.00
         </Card.Text>
@@ -83,7 +83,7 @@ let MenuCards = () => {
     <Card className='card-main'>
       <Card.Img variant="top" src={require("./images/kfc-bucket.jpeg")} />
       <Card.Body>
-        <Card.Title>18PC Bucket</Card.Title>
+        <Card.Title className="title fs-6">18PC Bucket</Card.Title>
         <Card.Text>
         Ksh3250.00
         </Card.Text>
@@ -94,7 +94,7 @@ let MenuCards = () => {
     <Card className='card-main'>
       <Card.Img variant="top" src={require("./images/kfc-bucket.jpeg")} />
       <Card.Body>
-        <Card.Title>15PC Bucket</Card.Title>
+        <Card.Title className="title fs-6">15PC Bucket</Card.Title>
         <Card.Text>
         Ksh2900.00
         </Card.Text>
@@ -106,7 +106,7 @@ let MenuCards = () => {
     <Card className='card-main'>
       <Card.Img variant="top" src={require("./images/9-pc-bucket.jpeg")} />
       <Card.Body>
-        <Card.Title>9PC Bucket</Card.Title>
+        <Card.Title className="title fs-6">9PC Bucket</Card.Title>
         <Card.Text>
         Ksh1900.00
         </Card.Text>
@@ -116,7 +116,7 @@ let MenuCards = () => {
     </div>
 
 
-    <Offcanvas show={show} onHide={handleClose} className="bg bg-danger">
+    <Offcanvas show={show} onHide={handleClose} className="offcanvas bg bg-danger">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title className="offcanvas-header">
             <img src={require("./images/kfc-delivery-logo.png")} alt="kfc-delivery-logo" className="kfc-delivery-img" /> 

@@ -34,14 +34,14 @@ const MainFooter = () => {
                     <span className="social-header">Chat with us on:</span>
                      <br />
                     <div className="social-icons">
-                      <Link to="https://www.instagram.com/kfckenya/?hl=en"><i class="fa-brands fa-instagram fa-xl"></i></Link>
-                      <Link to="https://www.facebook.com/people/KFC-KENYA/61555743797178/?_rdr"><i class="fa-brands fa-facebook fa-xl"></i></Link>
-                      <Link to="https://x.com/kfcinkenya?lang=en"><i class="fa-brands fa-x-twitter fa-xl"></i></Link>  
+                      <Link to="https://www.instagram.com/kfckenya/?hl=en"><i class="fa-brands fa-instagram"></i></Link>
+                      <Link to="https://www.facebook.com/people/KFC-KENYA/61555743797178/?_rdr"><i class="fa-brands fa-facebook"></i></Link>
+                      <Link to="https://x.com/kfcinkenya?lang=en"><i class="fa-brands fa-x-twitter"></i></Link>  
                       </div>
                       <span className="hotline">KFC Hotline : +254 755 932 932</span> 
                 </div>
             </div>
-            <div className="text-center my-4">
+            <div className="text-center my-4 fw-bold">
              &copy;2024 KFC Kenya All Rights Reserved.
              </div>
         </div>

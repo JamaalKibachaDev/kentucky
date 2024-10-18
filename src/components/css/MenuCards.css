@@ -140,24 +140,42 @@ width: 220px;
     }
 }
 
+
 @media(max-width:570px) {
     .card-main{
         width: 120px;
+        font-size: small;
     }
 
     .card-button{
         margin-top: 4%;
         width: 90px;
     }
+
 }
 
 @media(max-width:500px) {
     .card-main{
-        width: 107px;
+        width: 120px;
     }
+
 
     .card-button{
         margin-top: 4%;
         width: 70px;
     }
+}
+
+@media(max-width:450px) {
+    .card-main{
+        width: 120px;
+        height:10px;
+    }
+
+
+    .card-button{
+        margin-top: 4%;
+        width: 70px;
+    }
+
 }

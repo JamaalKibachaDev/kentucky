@@ -1,4 +1,16 @@
 .carousel-img{
-    width: auto;
+    width:100%;
     height: 260px;
+}
+
+@media (max-width:1000px) {
+    .carousel-img {
+        height: 150px;
+    }
+}
+
+@media (max-width:600px) {
+    .carousel-img {
+        height: 120px;
+    }
 }

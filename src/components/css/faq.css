@@ -9,5 +9,9 @@ span{
     text-decoration: overline;
 }
 
-
+@media (max-width:600px) {
+    .accord-body{
+        font-size: medium;
+    }
+}
 

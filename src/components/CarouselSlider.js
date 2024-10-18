@@ -10,7 +10,7 @@ const MainCarousel = () => {
             <br />
         </div>
 
-         <Carousel>
+         <Carousel className="main-carousel">
       <Carousel.Item interval={2000}>
        <img src={require("./images/carousel-1.jpeg")} alt="carousel-1" className="carousel-img"/>
       </Carousel.Item>
