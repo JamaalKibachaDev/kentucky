@@ -42,3 +42,15 @@ span{
     font-size: large;
     font-style: italic;
 }
+
+@media (width < 600px) {
+    .main-intro{
+        font-size: small;
+    }
+
+    .gallery-1{
+        font-size: small;
+    }
+
+
+}

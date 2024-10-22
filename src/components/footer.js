@@ -41,7 +41,7 @@ const MainFooter = () => {
                       <span className="hotline">KFC Hotline : +254 755 932 932</span> 
                 </div>
             </div>
-            <div className="text-center my-4 fw-bold">
+            <div className="py-4 text-center my-4 fw-bold">
              &copy;2024 KFC Kenya All Rights Reserved.
              </div>
         </div>
